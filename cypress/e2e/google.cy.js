@@ -1,10 +1,9 @@
 ///<reference types ="cypress"/>
 
-describe('Gmail login', ()=>{
+describe("Gmail login", () => {
+  it("Gmail login", () => {
+    cy.visit("https://www.google.co.in/");
 
-it ('Gmail login', ()=>{
-
-    cy.visit('https://www.google.co.in/')
-    cy.get('.gLFyf').type('gmail{enter}')
-})
-})
+    cy.get(".gLFyf").type("");
+  });
+});
